@@ -1,0 +1,215 @@
+body {
+    background: #eeeeee;
+    font-family: 'Arial Narrow', Arial, sanserif;
+    color: #707275;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: #7a7c7e;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* li {
+    display: block;
+    padding: 0;
+    margin: 0;
+} */
+button {
+    box-sizing: border-box;
+}
+section {
+    padding: 60px 0;
+}
+.search-form {
+    display: flex;
+    margin-top: 5px;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    padding-left: 40px;
+    border: none;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    padding-right: 12px;
+}
+input[type="search"]:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.search-input {
+    position: relative;
+    width: 100%;
+}
+.search-input img {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+}
+.search-wrapp_btn {
+    font-size: 12px;
+    font-weight: bold;
+    color: #373f45;
+    letter-spacing: 0.02em;
+    padding: 0px 20px;
+    margin-left: 8px;
+    border: 1px solid transparent;
+    background: #e4e4e4;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+.search-wrapp_btn:hover {
+    color: #000;
+    background-color: #f3f3f3;
+    border-color: #fff;
+}
+
+
+/* tags */
+.tag-list {
+    display: flex;
+    justify-content: space-between;
+}
+.tag-item {
+    display: block;
+}
+.tag-item a {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family:'Arial', sanserif;
+}
+.tag-item a:hover {
+    color: #fff;
+    background: #707275;
+}
+.active-tag {
+    color: #fff;
+    background: #707275;
+    position: relative;
+}
+.tag-label {
+    display: none;
+}
+
+
+/* Questions */
+.question-title {
+    font-size: 18px;
+    font-family: 'Arial' ,sanserif;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+.question-text {
+    column-rule: 1px solid #a2a2a2;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 65px;
+    -moz-column-gap: 65px;
+    -webkit-column-gap: 65px;
+    column-width: 400px;
+    height: 340px;
+    font-size: 14px;
+    font-family: 'Arial', sanserif;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+
+}
+.question-text_title {
+    text-indent: 15px;
+    margin-bottom: 25px;
+}
+.question-text_wrap {
+    margin-left: 15px;
+}
+.question-text_other {
+    text-indent: 15px;
+    margin: 25px 0;
+}
+.question-text span{
+    display: block;
+}
+.question-text_item {
+    color: #4d4e53;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 600px;
+    }
+    .question-text {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 300px;
+    }
+    .hidden {
+        display: none;
+    }
+    .tag-list {
+        flex-direction: column;
+        background-color: #ededec;
+        outline: 1px solid rgba(200, 200, 200, 0.85);
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
+        width: 163px;
+        padding: 10px 0px 0px 28px;
+        margin-top: 10px;
+    }
+    .active-tag, .tag-item a:hover {
+        color: #2a2a2a;
+        background: #ededec;
+    }
+    .tag-item a {
+        padding: 0;
+    }
+    .tag-item {
+        margin-bottom: 10px;
+    }
+    .active-tag:before {
+        content: '→';
+        display: none;
+        position: absolute;
+        display: block;
+        left: -21px;
+        top: 0;
+        color: #707275;
+    }
+    .tag-label {
+        display: block;
+        background: url(./MenuIco.png) no-repeat 8px center;
+        padding-left: 28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: 1px solid rgba(200, 200, 200, 0.85);
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
+        width: 163px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family:'Arial', sanserif;
+    }
+}
