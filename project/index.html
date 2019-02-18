@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,22 +11,67 @@
 <body>
     <section>
         <div class="container">
+            <h1>World of Tanks</h1>
+            <!-- flex -->
             <div class="search-wrapp">
                 <form action="#" class="search-form">
                     <div class="search-input">
-                        <input type="search">
-                        <img src="./Find.png" alt="find">
+                        <label for="find1">
+                            <img src="./Find.png" alt="find">
+                        </label>
+                        <input type="search" placeholder="найти" id="find1">
                     </div>
                     <button class="search-wrapp_btn" type="submit">Найти</button>
                 </form>
             </div>
+            <!-- float -->
             <div class="search-wrapp">
-                <form action="#" class="search-form">
-                    <div class="search-input">
-                        <input type="search">
-                        <img src="./Find.png" alt="find">
+                <form action="#" class="find claerfix">
+                    <div class="search-input find__input">
+                        <label for="find2">
+                            <img src="./Find.png" alt="find">
+                        </label>
+                        <input type="search" placeholder="why" id="find2">
                     </div>
-                    <button class="search-wrapp_btn" type="submit">Go</button>
+                    <button class="find__button button search-wrapp_btn" type="submit">Go</button>
+                </form>
+            </div>
+            <!-- inline-table -->
+            <div class="search-wrapp">
+                <form action="#" class="search">
+                    <div class="search__input">
+                        <label for="find3">
+                            <img src="./Find.png" alt="find">
+                        </label>
+                        <input type="search" placeholder="Что хотите найти?" id="find3">
+                    </div>
+                    <div class="search__button">
+                        <button class="button search-wrapp_btn" type="submit">
+                            Поиск
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- table -->
+            <div class="search-wrapp">
+                <form action="#" class="search-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="input-table">
+                                    <label for="find4">
+                                        <img src="./Find.png" alt="find">
+                                    </label>
+                                    <input type="search" placeholder="Search" id="find4">
+                                </td>
+                                <td>
+                                    <button class="button search-wrapp_btn" type="submit">
+                                        Search
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </form>
             </div>
         </div>
@@ -53,50 +98,119 @@
     <hr>
     <section>
         <div class="container">
+            <h2>
+                Почему не рассматриваются заявки с жалобами на нарушение Правил игры?
+            </h2>
             <div class="question">
-                <h4 class="question-title">
-                    Почему не рассматриваются заявки с жалобами на нарушение Правил игры?
-                </h4>
-                <p class="question-text">
-                    <span class="question-text_title">
-                        После введения функционала «Пожаловаться» не рассматриваются заявки, созданные в Центр поддержки пользователей о нарушении Правил игры по следующим пунктам:
-                    </span>
-                    <span class="question-text_item">
-                        <b>1.</b> «Оскорбления и провокации»
-                    </span>
-                    <span class="question-text_wrap">
-                        <span>В данный пункт входит:</span>
-                        - использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию;
-                        <br>
-                        - клевета, размещение заведомо ложной информации об Игре, Администрации, Модераторах или Пользователях;
-                        <br>
-                        - угрозы реальной расправы в отношенииили представителей Администрации Проекта. Все виды соглашения.
-                    </span>
-                    <span class="question-text_item">
-                        <b>2.</b> «Неинформативные сообщения»
-                    </span>
-                    <span class="question-text_wrap">
-                        <span>В данный пункт входит:</span>
-                        - размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
-                        <br>
-                        - все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
-                    </span>
-                    <span class="question-text_other">
-                        Также не рассматриваются следующие заявки, созданные в Центр поддержки пользователей о нарушении Правил игры:
-                    </span>
-                    <span class="question-text_item">
-                        <b>3.</b> «Раскрытие позиций союзников»
-                    </span>
-                    <span class="question-text_item">
-                        <b>4.</b> «Выталкивание союзника»
-                    </span>
-                    <span class="question-text_item">
-                        <b>5.</b> «Неспортивное поведение»
-                    </span>
-                    <span class="question-text_item">
-                        <b>6.</b> «Повреждение союзников»
-                    </span>    
+                <p class="question__discription">
+                    После введения функционала «Пожаловаться» не рассматриваются заявки, созданные в Центр поддержки пользователей о нарушении Правил игры по следующим пунктам:
                 </p>
+                <ol class="question__list">
+                    <li>
+                        <a href="#" class="question__link">
+                            «Оскорбления и провокации»
+                        </a>
+                        <div class="question__wrap visible">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                </li>
+                                <li>
+                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                </li>
+                                <li>
+                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="question__link">
+                            «Неинформативные сообщения»
+                        </a>
+                        <div class="question__wrap visible">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
+                                </li>
+                                <li>
+                                        все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li type="none">
+                        <p class="question__text">
+                            Также не рассматриваются следующие заявки, созданные в Центр поддержки пользователей о нарушении Правил игры:
+                        </p>
+                    </li>
+                    <li value="3">
+                        <a href="#" class="question__link">
+                            «Раскрытие позиций союзников»
+                        </a>
+                        <div class="question__wrap">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
+                                </li>
+                                <li>
+                                        все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="question__link">
+                            «Выталкивание союзника»
+                        </a>
+                        <div class="question__wrap">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
+                                </li>
+                                <li>
+                                        все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="question__link">
+                            «Неспортивное поведение»
+                        </a>
+                        <div class="question__wrap">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
+                                </li>
+                                <li>
+                                        все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="question__link">
+                            «Повреждение союзников»
+                        </a>
+                        <div class="question__wrap">
+                            <p>В данный пункт входит:</p>      
+                            <ul>
+                                <li>
+                                    размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей от темы беседы (флуд);
+                                </li>
+                                <li>
+                                        все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
     </section>
