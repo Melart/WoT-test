@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/style.css">
     <title>Test</title>
 </head>
 <body>
     <section>
         <div class="container">
-            <h1>World of Tanks</h1>
+            <a href="https://wargaming.com/ru/" class="logo" target="_blanc">
+                <img src="./img/logo-dark.svg" alt="wargaming">
+            </a>
+            <h1>Тестовое задание.</h1>
             <!-- flex -->
             <div class="search-wrapp">
                 <form action="#" class="search-form">
                     <div class="search-input">
                         <label for="find1">
-                            <img src="./Find.png" alt="find">
+                            <img src="./img/Find.png" alt="find">
                         </label>
-                        <input type="search" placeholder="найти" id="find1">
+                        <input type="search" placeholder="почему" id="find1">
                     </div>
                     <button class="search-wrapp_btn" type="submit">Найти</button>
                 </form>
@@ -29,7 +32,7 @@
                 <form action="#" class="find claerfix">
                     <div class="search-input find__input">
                         <label for="find2">
-                            <img src="./Find.png" alt="find">
+                            <img src="./img/Find.png" alt="find">
                         </label>
                         <input type="search" placeholder="why" id="find2">
                     </div>
@@ -41,7 +44,7 @@
                 <form action="#" class="search">
                     <div class="search__input">
                         <label for="find3">
-                            <img src="./Find.png" alt="find">
+                            <img src="./img/Find.png" alt="find">
                         </label>
                         <input type="search" placeholder="Что хотите найти?" id="find3">
                     </div>
@@ -60,7 +63,7 @@
                             <tr>
                                 <td class="input-table">
                                     <label for="find4">
-                                        <img src="./Find.png" alt="find">
+                                        <img src="./img/Find.png" alt="find">
                                     </label>
                                     <input type="search" placeholder="Search" id="find4">
                                 </td>
@@ -114,13 +117,13 @@
                             <p>В данный пункт входит:</p>      
                             <ul>
                                 <li>
-                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию;
                                 </li>
                                 <li>
-                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                    клевета, размещение заведомо ложной информации об Игре, Администрации, Модераторах или Пользователях;
                                 </li>
                                 <li>
-                                    использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование собеседника к их использованию
+                                    угрозы реальной расправы в отношенииили представителей Администрации Проекта. Все виды соглашения.
                                 </li>
                             </ul>
                         </div>
@@ -141,7 +144,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li type="none">
+                    <li class="question-paragraph">
                         <p class="question__text">
                             Также не рассматриваются следующие заявки, созданные в Центр поддержки пользователей о нарушении Правил игры:
                         </p>
@@ -214,6 +217,9 @@
             </div>
         </div>
     </section>
-    <script src="./main.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
